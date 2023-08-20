@@ -1,0 +1,244 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{margin:0 ;
+  padding:0;}
+  body{overflow-x:hidden;}
+/*---------------Sidepanel css-----------------------*/
+
+.sidepanel{height:100vh;width:260px;background-color:rgb(32, 32, 43);display:flex;
+          align-items:center;padding:20px;
+        flex-direction:column;gap:40px;position:fixed;}
+.header-panel{color:white;
+              font-size:20px;
+              text-align: center;
+              width:100%;}
+.profile-img{height:40px;width:40px;}
+.s-2{display:flex;flex-direction:column;gap:40px;align-items: flex-start;color:white;}
+.my-profile{display:flex;align-items: center;justify-content:center;gap:10px;color:white;width:100%;}
+.partition{width:300px;height:1px;background-color:gray}
+.option{padding:5px 10px 5px 25px;cursor:pointer;transition:0.3s}
+.option:hover{transform:scale(120%)}
+/*---------------Top hEader----------*/
+
+.top-header{position:relative;
+            left:300px;
+            width:calc(100% - 300px);
+            height:80px;
+          background-color: rgb(39, 37, 49);
+          display:flex;align-items: center;
+          gap:10px;color:white;
+        padding-left:5px;}
+
+.hamburg{position:relative;height:30px;width:25px;display:flex;flex-direction:column;gap:5px;justify-content: center;cursor:pointer;}
+.l1,.l2,.l3{width:100%;
+            height:2px;
+            background-color:white;}
+
+/*--------------------View Users-----------------*/
+.main-content{position:relative;left:300px;display:flex;width:calc(100vw - 300px);height:100vh;flex-direction:column;gap:20px;}
+.user-traffic{display:flex;margin-left:50px;width:100%;height:200px;align-items: center;gap:20px;}
+.total,.online,.stopped{height:180px;width:300px;background-color:green;display:flex;flex-direction: column;align-items: center;justify-content: center;border-radius:25px;}
+.total{background:rgb(8, 142, 142);}
+.online{background:rgb(14, 155, 9)}
+.stopped{background:rgb(186, 63, 63)}
+.total-number,.online-number,.stopped-number{font-size:30px;font-weight:bold;color:white;}
+.status-user{font-size:30px;color:#033034}
+
+
+.functional-buttons{display:flex;gap:30px;margin-left:50px;}
+.btn-1,.btn-2,.btn-3,.btn-4,.btn-5{width:200px;height:50px;background: cyan;display:flex;align-items: center;justify-content: center;border-radius:15px;}
+.btn-1{background-color: rgb(60, 112, 135);}
+.btn-2{background-color: cyan;}
+.btn-3{background-color: rgb(65, 144, 65);}
+.btn-4{background-color: rgb(193, 56, 56);}
+.btn-5{background-color: yellow;}
+
+.table-of-content{margin-left:auto;margin-right:auto;position:relative;background-color:rgb(255, 255, 255);width:95%;display:flex;flex-direction: column;gap:10px;}
+.outer-header{display:flex;height:80px;align-items:center;background-color: rgb(28, 28, 71);}
+.table-title{padding-left:20px;align-items: center;font-size:20px;color:white;}
+.filter-option-1{display:flex;gap:10px;}
+.filter1{color:white;}
+.filter-option-1{position:absolute;right:10px;}
+.filter-inp1{outline:none;background:white;border:none;padding:5px;}
+
+
+.inner-header{width:100%;height:50px;font-size:25px;display:flex;align-items: flex-end;justify-content: center;background-color:white;}
+
+.main-table-1{width:100%;border:1px solid black;}
+
+/*--------------------View Hosts-----------------*/
+.main-content-2{position:relative;left:300px;display:flex;width:calc(100vw - 300px);height:100vh;flex-direction:column;gap:20px;}
+.user-traffic-2{display:flex;margin-left:50px;width:100%;height:200px;align-items: center;gap:20px;}
+.total-2,.online-2,.stopped-2{height:180px;width:300px;background-color:green;display:flex;flex-direction: column;align-items: center;justify-content: center;border-radius:25px;}
+.total-2{background:rgb(8, 142, 142);}
+.online-2{background:rgb(14, 155, 9)}
+.stopped-2{background:rgb(186, 63, 63)}
+.total-number-2,.online-number-2,.stopped-number-2{font-size:30px;font-weight:bold;color:white;}
+.status-user-2{font-size:30px;color:#033034}
+
+
+.functional-buttons-2{display:flex;gap:30px;margin-left:50px;}
+.btn-21,.btn-22,.btn-23,.btn-24,.btn-25{width:200px;height:50px;background: cyan;display:flex;align-items: center;justify-content: center;border-radius:15px;}
+.btn-21{background-color: rgb(60, 112, 135);}
+.btn-22{background-color: cyan;}
+.btn-23{background-color: rgb(65, 144, 65);}
+.btn-24{background-color: rgb(193, 56, 56);}
+.btn-25{background-color: yellow;}
+
+.table-of-content-2{margin-left:auto;margin-right:auto;position:relative;background-color:rgb(255, 255, 255);width:95%;display:flex;flex-direction: column;gap:10px;}
+.outer-header-2{display:flex;height:80px;align-items:center;background-color: rgb(28, 28, 71);}
+.table-title-2{padding-left:20px;align-items: center;font-size:20px;color:white;}
+.filter-option-2{display:flex;gap:10px;}
+.filter2{color:white;}
+.filter-option-2{position:absolute;right:10px;}
+.filter-inp2{outline:none;background:white;border:none;padding:5px;}
+
+
+.inner-header-2{width:100%;height:50px;font-size:25px;display:flex;align-items: flex-end;justify-content: center;background-color:white;}
+
+.main-table-2{width:100%;border:1px solid black;}
+
+/*--------------------Users Master---------------------------------------------------------*/
+.main-content-3{width:calc(100vw - 300px);
+                display:flex;
+              border:1px solid black;
+               margin:10px;
+                top:10px;
+                position:relative;
+                left:300px;
+                flex-direction: column;
+                align-items: center;
+                gap:20px;
+               
+                }
+
+.outer-header-3{width:100%;
+
+                
+                height:60px;
+                display:flex;
+                background-color:rgb(25, 25, 57);
+                gap:10px;
+              align-items: center;
+            justify-content:center}
+.filter-3{display:flex;gap:10px;align-items: center;}
+.filter3{color:white;font-size:15px;}
+.filter-inp3{height:30px;outline:none;}
+.Refresh,
+.Clear-Cache,
+.Mute-All,
+.Unmute-All,
+.Logout-All{font-size:16px;font-weight:bold;padding:5px;border:none;outline:none;width:200px;height:40px;border-radius:5px;}
+
+.Refresh,.Unmute-All{background-color: cyan;}
+.Clear-Cache,.Logout-All{background-color: yellow;}
+.Mute-All{background-color: orange;}
+
+
+.active-users-3{width:95%;border-radius:10px;
+                display:flex;border:1px solid gray;
+                flex-direction: column;
+                box-shadow:0px 5px 10px rgb(216, 216, 216);}
+.header-active-users-3{width:100%;
+                      height:40px;
+                      display:flex;align-items: center;
+                      border-top-left-radius:5px;
+                      border-top-right-radius:5px;
+                      background-color:rgb(22, 22, 45);
+                      color:rgb(255, 255, 255);
+                      font-size:16px;font-weight:bold;}
+.content-active-users{height:200px;width:100%;background-color:white;overflow-y:scroll;}
+.rooms{width:95%;
+      display:flex;
+      gap:20px;
+      
+      justify-content: center;
+      flex-wrap:wrap;}
+.Room-1,.Room-2{height:200px;
+  border-radius:5px;
+        box-shadow:0px 5px 5px rgb(190, 190, 190);
+        width:45%;background-color:rgb(255, 255, 255);
+        overflow-y: scroll;}
+.header-room{border-top-left-radius:5px;
+  border-top-right-radius:5px;height:30px;width:100%;background-color:black;color:white;display:flex;align-items:center;padding-left: 20px;}
+
+
+  /*--------------------Rooms Master---------------------------------------------------------*/
+.main-content-4{position:relative;
+                width:calc(100vw - 300px);
+                left:300px;
+                display:flex;
+                align-items: center;
+                top:20px;gap:20px;
+                flex-direction:column;
+                justify-content:center;
+              }
+.main-header-4{display:flex;color:white;align-items:center;height:60px;font-weight:bold;font-size:30px;width:90%;background-color:rgb(25, 25, 39);width:90%;padding-left:20px;border-top-left-radius:5px;border-top-right-radius:5px;}
+.room-count-table{width:90%;}
+.main-table-4{width:100%;border:1px solid gray;border-collapse: collapse;}
+td{border:1px solid black;height:40px;padding-left:10px;}
+
+ /*--------------------App Info---------------------------------------------------------*/
+ .main-content-5{position:relative;
+  width:calc(100vw - 300px);
+  left:300px;
+  display:flex;
+ 
+  align-items: center;
+  top:20px;gap:20px;
+  flex-direction:column;
+  justify-content:center;}
+  .main-header-5{display:flex;color:white;align-items:center;height:60px;font-weight:bold;font-size:30px;width:90%;background-color:rgb(25, 25, 39);width:90%;padding-left:20px;border-top-left-radius:5px;border-top-right-radius:5px;}
+  .user-details-form{width:calc(90% - 40px);display:flex;flex-direction:column;gap:20px;background-color: rgb(243, 243, 233);padding:20px;}
+  .align-inputs{display:flex;flex-wrap:wrap;gap:40px;}
+  .i1,.i2,.i3,.i4,.i5{display:flex;flex-direction:column;width:45%;}
+.i1 label,
+.i2 label,
+.i3 label,
+.i4 label,
+.i5 label{font-size:16px;font-weight:bold;}
+.i6{display:flex;gap:4px;align-items: center;}
+.i1 input,
+.i2 input,
+.i3 input,
+.i4 input,
+.i5 input{height:40px;outline:none;border:none;background-color: rgb(255, 255, 255);padding-left:5px;border-radius:5px;position:relative;top:5px;box-shadow:0px 0px 2px black;}
+.save-btn{display:flex;justify-content: center;}
+.btn-save{width:80px;height:40px;border:none;background-color:rgb(38, 193, 38);border-radius:15px;color:white;font-size:16px;font-weight:bold;box-shadow:0px 1px 5px gray;cursor:pointer;}
